@@ -1,0 +1,118 @@
+:root {
+    --cor-background: #FDE9F7;
+    --cor-destaque: #EE5E43;
+    --cor-text: #181A18;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--cor-text);
+}
+
+html, body {
+    background-color: var(--cor-background);
+    min-height: 100dvh;
+    max-width: 100dvw;
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: var(--cor-destaque);
+    padding: 10px 15px;
+    color: var(--cor-background);
+}
+
+section{
+    margin: 0 5%;
+}
+
+header{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.content-nav-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: var(--cor-text);
+    font-size: 1.2rem;
+}
+
+.logo-text{
+    text-align: center;
+    line-height: 0.8;
+    font-weight: bold;
+}
+
+.logo-text span{
+    display: block;
+}
+
+.text-up{
+    font-size: 1.5rem;
+}
+
+.text-down{
+    font-size: 2.4rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
+.container-background{
+    background-image: linear-gradient(rgba(228, 169, 194, 0.7), rgba(228, 169, 194, 0.7)), url(imgs/castelo-fora-lateral.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.main-photo-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border: solid 1px blue;
+    box-sizing: border-box;
+}
+
+
+
+.main-photo-container{
+    width: 45%;
+    max-width: 350px;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-photo-texts img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.main-text h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.main-text p{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.main-text span{
+    display: block;
+}
+
+
