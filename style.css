@@ -50,6 +50,17 @@ header{
     height: 80px;
     color: var(--cor-text);
     font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 90px;
+}
+
+.nav-texts{
+    transition: all 0.3s ease;
+}
+
+.nav-texts:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid var(--cor-hover);
 }
 
 .logo-text{
@@ -78,12 +89,13 @@ nav{
 
 .container-background{
     background-image: linear-gradient(rgba(228, 169, 194, 0.7), rgba(228, 169, 194, 0.7)), url(imgs/castelo-fora-lateral.jpg);
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 64vh;
+    min-height: auto;
     width: 100%;
     position: relative;
+    padding-bottom: 40px;
 }
 
 
@@ -161,11 +173,12 @@ nav{
     display: block;
     object-fit: cover;
     border-radius: 20px;
-    transition: transform 0.2s linear;
+    transition: transform, box-shadow, 0.2s linear;
 }
 
 .photo-woman-dresspink img:hover{
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .infos-texts h2{
